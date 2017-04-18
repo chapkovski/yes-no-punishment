@@ -26,18 +26,19 @@ $('input[name=punish_1]').change(function(){
     if (this.value=='True') {
       $('div.field-response_1').show();
       $('label[for=id_response_1]').show();
+      $('input#id_response_1').val('');
     }
     else {
       $('div.field-response_1').hide();
       $('label[for=id_response_1]').hide();
-      $('input#id_response_1').val();
+      $('input#id_response_1').val(0);
     }
 });
 
 
   $('div.field-response_1').hide();
   $('label[for=id_response_1]').hide();
-  $('input#id_response_1').val();
+  $('input#id_response_1').val(0);
 
 </script>
 
